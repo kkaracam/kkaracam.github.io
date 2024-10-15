@@ -1,0 +1,49 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with a smooth gradient background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+/* Central text container styling */
+.central-text {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for interactivity */
+.central-text:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    .central-text {
+        font-size: 1.5rem;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .central-text {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+    }
+}
